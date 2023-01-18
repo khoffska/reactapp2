@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\src"
   ],
-  "SelectedNode": "\\C:\\Users\\karlh\\Source\\Repos\\reactapp2",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

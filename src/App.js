@@ -7,6 +7,7 @@ const MyComponent = () => {
 
   const handleClick = async (path) => {
     try {
+      alert("Please wait 5 minutes for launch!");
       const res = await fetch(`${apiEndpoint}/${path}`);
       const json = await res.json();
       setResponse(json);
@@ -17,9 +18,10 @@ const MyComponent = () => {
 
   return (
     <div>
-      <button onClick={() => handleClick("route1")}>Route 1</button>
-      <button onClick={() => handleClick("route2")}>Route 2</button>
+      <button onClick={() => handleClick("mfarestrict")}>mfarestrict</button>
+      <button onClick={() => handleClick("ec2")}>ec2</button>
       <button onClick={() => handleClick("waf")}>WAF</button>
+      <button onClick={() => handleClick("test")}>test</button>
       <div>{JSON.stringify(response)}</div>
     </div>
   );
